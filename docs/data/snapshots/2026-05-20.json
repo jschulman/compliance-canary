@@ -8,7 +8,7 @@
   "headline": {
     "value": 33,
     "label": "regulatory-readiness signal mentions across crypto-native finance JDs",
-    "n_jds": 10
+    "n_jds": 12
   },
   "by_credential": [
     {
@@ -61,7 +61,7 @@
     {
       "date": "2026-05-20",
       "total_signals": 33,
-      "n_jds": 10
+      "n_jds": 12
     }
   ]
 }
