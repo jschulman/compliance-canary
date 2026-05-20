@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compliance Canary</title>
+  <meta name="description" content="Tracking how ready the crypto sector is for federal stablecoin and crypto regulation. Open data, no tracking.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Compliance Canary</h1>
+      <p class="site-subtitle">Tracking how ready the crypto sector is for federal stablecoin and crypto regulation</p>
+      <p class="last-updated" id="last-updated">Last updated: loading…</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Headline -->
+    <section class="hero-score" id="hero-section">
+      <div class="hero-inner">
+        <div class="score-display">
+          <div class="score-number" id="hero-score">—</div>
+          <div class="score-label" id="hero-score-label">signals</div>
+        </div>
+        <div class="score-meta">
+          <div class="phase-label" id="hero-phase">Loading…</div>
+          <div class="phase-description" id="hero-description"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Per-credential breakdown -->
+    <section class="table-section">
+      <h2 class="section-title">Signals by Credential</h2>
+      <table class="subsector-table" id="credential-table">
+        <thead>
+          <tr>
+            <th>Credential</th>
+            <th class="subsector-numeric">Mentions</th>
+            <th class="subsector-numeric">Share of total</th>
+          </tr>
+        </thead>
+        <tbody id="credential-tbody">
+          <tr><td colspan="3" style="text-align:center;color:var(--text-secondary);padding:1.5rem;">Loading…</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Timeseries -->
+    <section class="chart-section">
+      <h2 class="section-title">Readiness Signal Over Time</h2>
+      <div class="chart-wrap">
+        <canvas id="timeline-chart" height="240"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>Part of <strong>The Crypto Canaries</strong></div>
+      <div class="canaries-row">
+        <a href="https://jschulman.github.io/cfo-gap">cfo-gap</a>
+        <a href="https://jschulman.github.io/crypto-tool-curve">crypto-tool-curve</a>
+        <a href="https://jschulman.github.io/compliance-canary">compliance-canary</a>
+      </div>
+      <div>Sibling to <strong>The Canaries</strong></div>
+      <div class="canaries-row">
+        <a href="https://jschulman.github.io/displacement-curve">displacement-curve</a>
+        <a href="https://jschulman.github.io/stablecoin-signal">stablecoin-signal</a>
+        <a href="https://jschulman.github.io/quantum-qanary">quantum-qanary</a>
+      </div>
+      <div style="margin-top:1rem;">
+        Methodology: <a href="https://github.com/jschulman/compliance-canary/blob/main/METHODOLOGY.md">METHODOLOGY.md</a> ·
+        Source: <a href="https://github.com/jschulman/compliance-canary">github.com/jschulman/compliance-canary</a> ·
+        MIT License
+      </div>
+      <div style="margin-top:0.5rem;">
+        &copy; 2026 <a href="https://jayschulman.com">Jay Schulman</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
