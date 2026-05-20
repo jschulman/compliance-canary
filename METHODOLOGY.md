@@ -26,13 +26,15 @@ The headline metric is the **sum across all tracked credentials**, not the count
 The current tracked list:
 
 - **cpa** — Certified Public Accountant license (active, in-process, or required)
-- **big-4** — Big Four audit firm experience (Deloitte, EY, KPMG, PwC) as a required or preferred qualification
+- **big4** — Big Four audit firm experience (Deloitte, EY, KPMG, PwC) as a required or preferred qualification
 - **sox** — Sarbanes-Oxley internal-controls experience (SOX 404, SOX-readiness, ICFR)
 - **pcaob** — PCAOB-registered audit experience, or PCAOB inspection familiarity
 - **msb-mtl** — Money Services Business registration, state money transmitter licensing
 - **finra-sec** — FINRA registration (Series 7/24/27/28/63/79), SEC registered investment adviser supervisory experience, broker-dealer compliance
 - **gaap-asc** — Specific US GAAP / FASB ASC technical accounting experience (ASC 350, ASC 606, ASC 842, ASC 820, etc.)
 - **genius-act** — Explicit mention of the GENIUS Act, federal stablecoin legislation, or stablecoin-specific federal regulatory readiness
+- **nydfs** — NYDFS BitLicense, New York Department of Financial Services supervisory experience, or NYDFS Part 200 compliance familiarity
+- **cma** — Certified Management Accountant credential (IMA)
 
 The list is intentionally focused on credentials and keywords that signal *federal-grade* compliance readiness — not generic "compliance" language. The list is reviewed quarterly and changes will be noted in this file with a version bump.
 

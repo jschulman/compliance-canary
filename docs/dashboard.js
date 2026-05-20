@@ -32,7 +32,7 @@ function formatPct(x, digits) {
 }
 
 async function loadLatest() {
-  const res = await fetch('../data/latest.json', { cache: 'no-store' });
+  const res = await fetch('data/latest.json', { cache: 'no-store' });
   if (!res.ok) throw new Error('failed to load data/latest.json');
   return res.json();
 }
@@ -40,7 +40,7 @@ async function loadLatest() {
 async function loadSnapshots() {
   // Fall back to the timeseries embedded in latest.json if no separate manifest exists.
   try {
-    const res = await fetch('../data/timeseries.json', { cache: 'no-store' });
+    const res = await fetch('data/timeseries.json', { cache: 'no-store' });
     if (res.ok) return res.json();
   } catch {}
   return null;
