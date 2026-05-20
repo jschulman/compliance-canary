@@ -54,6 +54,7 @@ Three signals from the crypto economy's nervous system:
 - **[cfo-gap](https://jschulman.github.io/cfo-gap)** — Can crypto staff its finance orgs?
 - **[crypto-tool-curve](https://jschulman.github.io/crypto-tool-curve)** — Is purpose-built crypto-accounting tooling adopting?
 - **[compliance-canary](https://jschulman.github.io/compliance-canary)** — Is crypto getting ready for regulation?
+- **[comp-pulse](https://jschulman.github.io/comp-pulse)** — Which direction is crypto-native comp drifting?
 
 Sibling to *The Canaries*: [displacement-curve](https://jschulman.github.io/displacement-curve) · [stablecoin-signal](https://jschulman.github.io/stablecoin-signal) · [quantum-qanary](https://jschulman.github.io/quantum-qanary).
 
