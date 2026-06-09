@@ -1,19 +1,19 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-06-08",
+    "last_updated": "2026-06-09",
     "version": "1.0",
     "next_update": "daily at 03:00 America/Chicago"
   },
   "headline": {
-    "value": 51,
+    "value": 48,
     "label": "regulatory-readiness signal mentions across crypto-native finance JDs",
     "n_jds": 15
   },
   "by_credential": [
     {
       "credential": "finra-sec",
-      "n": 16
+      "n": 14
     },
     {
       "credential": "cpa",
@@ -49,7 +49,7 @@
     },
     {
       "credential": "cma",
-      "n": 1
+      "n": 0
     }
   ],
   "timeseries": [
@@ -156,6 +156,11 @@
     {
       "date": "2026-06-08",
       "total_signals": 51,
+      "n_jds": 0
+    },
+    {
+      "date": "2026-06-09",
+      "total_signals": 48,
       "n_jds": 15
     }
   ]
