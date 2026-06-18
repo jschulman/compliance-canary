@@ -1,14 +1,14 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-06-17",
+    "last_updated": "2026-06-18",
     "version": "1.0",
     "next_update": "daily at 03:00 America/Chicago"
   },
   "headline": {
-    "value": 359,
+    "value": 360,
     "label": "regulatory-readiness signal mentions across crypto-native finance JDs",
-    "n_jds": 46
+    "n_jds": 49
   },
   "by_credential": [
     {
@@ -25,7 +25,7 @@
     },
     {
       "credential": "finra-sec",
-      "n": 42
+      "n": 41
     },
     {
       "credential": "sox",
@@ -33,7 +33,7 @@
     },
     {
       "credential": "msb-mtl",
-      "n": 20
+      "n": 22
     },
     {
       "credential": "nydfs",
@@ -201,7 +201,12 @@
     {
       "date": "2026-06-17",
       "total_signals": 359,
-      "n_jds": 46
+      "n_jds": 0
+    },
+    {
+      "date": "2026-06-18",
+      "total_signals": 360,
+      "n_jds": 49
     }
   ]
 }
