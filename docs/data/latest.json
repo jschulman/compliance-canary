@@ -1,12 +1,12 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-06-19",
+    "last_updated": "2026-06-20",
     "version": "1.0",
     "next_update": "daily at 03:00 America/Chicago"
   },
   "headline": {
-    "value": 369,
+    "value": 368,
     "label": "regulatory-readiness signal mentions across crypto-native finance JDs",
     "n_jds": 48
   },
@@ -45,7 +45,7 @@
     },
     {
       "credential": "genius-act",
-      "n": 3
+      "n": 2
     },
     {
       "credential": "cma",
@@ -211,6 +211,11 @@
     {
       "date": "2026-06-19",
       "total_signals": 369,
+      "n_jds": 0
+    },
+    {
+      "date": "2026-06-20",
+      "total_signals": 368,
       "n_jds": 48
     }
   ]
