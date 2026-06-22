@@ -1,14 +1,14 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-06-21",
+    "last_updated": "2026-06-22",
     "version": "1.0",
     "next_update": "daily at 03:00 America/Chicago"
   },
   "headline": {
     "value": 378,
     "label": "regulatory-readiness signal mentions across crypto-native finance JDs",
-    "n_jds": 52
+    "n_jds": 51
   },
   "by_credential": [
     {
@@ -221,7 +221,12 @@
     {
       "date": "2026-06-21",
       "total_signals": 378,
-      "n_jds": 52
+      "n_jds": 0
+    },
+    {
+      "date": "2026-06-22",
+      "total_signals": 378,
+      "n_jds": 51
     }
   ]
 }
