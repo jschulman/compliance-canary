@@ -6,30 +6,30 @@
     "next_update": "daily at 03:00 America/Chicago"
   },
   "headline": {
-    "value": 110,
-    "label": "regulatory-readiness signal mentions across crypto-native finance JDs",
-    "n_jds": 79
+    "value": 123,
+    "label": "regulatory-readiness signal mentions across crypto-native finance JDs (active in the last 90 days)",
+    "n_jds": 89
   },
   "by_credential": [
     {
       "credential": "cpa",
-      "n": 36
+      "n": 39
     },
     {
       "credential": "gaap-asc",
-      "n": 24
+      "n": 28
     },
     {
       "credential": "sox",
-      "n": 21
+      "n": 23
     },
     {
       "credential": "big4",
-      "n": 17
+      "n": 19
     },
     {
       "credential": "finra-sec",
-      "n": 8
+      "n": 10
     },
     {
       "credential": "pcaob",
@@ -235,8 +235,8 @@
     },
     {
       "date": "2026-06-24",
-      "total_signals": 110,
-      "n_jds": 79
+      "total_signals": 123,
+      "n_jds": 89
     }
   ]
 }
