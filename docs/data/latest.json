@@ -1,23 +1,23 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-07-04",
+    "last_updated": "2026-07-05",
     "version": "1.0",
     "next_update": "daily at 03:00 America/Chicago"
   },
   "headline": {
-    "value": 132,
+    "value": 136,
     "label": "regulatory-readiness signal mentions across crypto-native finance JDs (active in the last 90 days)",
-    "n_jds": 100
+    "n_jds": 103
   },
   "by_credential": [
     {
       "credential": "cpa",
-      "n": 44
+      "n": 45
     },
     {
       "credential": "gaap-asc",
-      "n": 30
+      "n": 31
     },
     {
       "credential": "sox",
@@ -29,7 +29,7 @@
     },
     {
       "credential": "finra-sec",
-      "n": 10
+      "n": 12
     },
     {
       "credential": "pcaob",
@@ -286,7 +286,12 @@
     {
       "date": "2026-07-04",
       "total_signals": 132,
-      "n_jds": 100
+      "n_jds": 0
+    },
+    {
+      "date": "2026-07-05",
+      "total_signals": 136,
+      "n_jds": 103
     }
   ]
 }
