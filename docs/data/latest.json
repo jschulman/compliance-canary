@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-08-11",
+    "last_updated": "2026-08-12",
     "version": "1.0",
     "next_update": "daily at 03:00 America/Chicago"
   },
@@ -460,6 +460,11 @@
     },
     {
       "date": "2026-08-11",
+      "total_signals": 182,
+      "n_jds": 0
+    },
+    {
+      "date": "2026-08-12",
       "total_signals": 182,
       "n_jds": 138
     }
