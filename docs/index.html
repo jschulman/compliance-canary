@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compliance Canary</title>
-  <meta name="description" content="Tracking how ready the crypto sector is for federal stablecoin and crypto regulation. Open data, no tracking.">
+  <meta name="description" content="Tracking credential and control requirements in finance job descriptions. Open data, no tracking.">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="container">
       <h1 class="site-title">Compliance Canary</h1>
-      <p class="site-subtitle">Tracking how ready the crypto sector is for federal stablecoin and crypto regulation</p>
+      <p class="site-subtitle">Tracking credential and control requirements in finance job descriptions</p>
       <p class="last-updated" id="last-updated">Last updated: loading…</p>
     </div>
   </header>
@@ -24,7 +24,7 @@
       <div class="hero-inner">
         <div class="score-display">
           <div class="score-number" id="hero-score">—</div>
-          <div class="score-label" id="hero-score-label">signals</div>
+          <div class="score-label" id="hero-score-label">of eligible JDs</div>
         </div>
         <div class="score-meta">
           <div class="phase-label" id="hero-phase">Loading…</div>
@@ -35,28 +35,48 @@
 
     <!-- Per-credential breakdown -->
     <section class="table-section">
-      <h2 class="section-title">Signals by Credential</h2>
+      <h2 class="section-title">Credentials and General Controls</h2>
       <table class="subsector-table" id="credential-table">
         <thead>
           <tr>
-            <th>Credential</th>
-            <th class="subsector-numeric">Mentions</th>
-            <th class="subsector-numeric">Share of total</th>
+            <th>Credential / control</th>
+            <th class="subsector-numeric">JDs mentioning</th>
+            <th class="subsector-numeric">Share of eligible JDs</th>
+            <th class="subsector-numeric">Companies</th>
           </tr>
         </thead>
         <tbody id="credential-tbody">
-          <tr><td colspan="3" style="text-align:center;color:var(--text-secondary);padding:1.5rem;">Loading…</td></tr>
+          <tr><td colspan="4" style="text-align:center;color:var(--text-secondary);padding:1.5rem;">Loading…</td></tr>
         </tbody>
+      </table>
+    </section>
+
+    <p class="chart-caption" id="sample-note"></p>
+
+    <section class="table-section">
+      <h2 class="section-title">Requirements in a Blockchain Context</h2>
+      <p class="chart-caption" id="blockchain-summary">Integration, reconciliation, custody and controls terms are counted separately from vendor names. A matching term in a blockchain-related description is a demand signal, not evidence of production use.</p>
+      <table class="subsector-table">
+        <thead><tr><th>Requirement</th><th class="subsector-numeric">JDs mentioning</th><th class="subsector-numeric">Share of eligible JDs</th><th class="subsector-numeric">Companies</th></tr></thead>
+        <tbody id="requirement-tbody"><tr><td colspan="4">Loading…</td></tr></tbody>
       </table>
     </section>
 
     <!-- Timeseries -->
     <section class="chart-section">
-      <h2 class="section-title">Readiness Signal Over Time</h2>
+      <h2 class="section-title">Credential Demand Over Time</h2>
+      <p class="chart-caption">Finance-role matching and the 90-day demand window changed on June 24, 2026. Earlier periods may use different definitions; missing denominators remain gaps.</p>
       <div class="chart-wrap">
         <canvas id="timeline-chart" height="240"></canvas>
       </div>
     </section>
+    <section class="chart-section">
+      <h2 class="section-title">Historical Mention Counts</h2>
+      <p class="chart-caption">The original series is retained for context. A job may contribute several mentions; counts also change with sample size. Older snapshots may lack the unique-job counts needed for the percentage chart.</p>
+      <div class="chart-wrap"><canvas id="mentions-chart" height="240"></canvas></div>
+    </section>
+    <p class="chart-caption" id="method-note"></p>
+    <p class="chart-caption">This crypto-native baseline is a selected employer sample. It does not measure blockchain adoption across banks, brokers, payment processors, or other incumbent businesses.</p>
   </main>
 
   <footer class="site-footer">
@@ -67,6 +87,10 @@
         <a href="https://jschulman.github.io/crypto-tool-curve">crypto-tool-curve</a>
         <a href="https://jschulman.github.io/compliance-canary">compliance-canary</a>
         <a href="https://jschulman.github.io/comp-pulse">comp-pulse</a>
+      </div>
+      <div class="canaries-row">
+        <a href="https://jschulman.github.io/stablecoin-signal/#financial-rails">Financial Rails</a>
+        <a href="https://jayschulman.com/blockchain#incumbent-panel">Incumbent employer panel</a>
       </div>
       <div>Sibling to <strong>The Canaries</strong></div>
       <div class="canaries-row">

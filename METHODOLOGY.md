@@ -1,107 +1,48 @@
 # Methodology
 
-How Compliance Canary is computed, what its limits are, and how to read its numbers honestly.
-
-## One question
-
-Is the crypto sector actually staffing up for federal regulation, or hoping the rules don't arrive?
-
-## The metric
-
-**Regulatory Readiness Signal**, defined corpus-wide and per-credential:
+What share of eligible finance JDs names a tracked credential or control term, and how many companies account for those requests?
 
 ```
-total_signals = Σ (mentions of any tracked credential across all open finance JDs)
+credential_prevalence = unique eligible JDs with at least one tracked term / eligible JDs
+company_breadth = matching companies / companies with eligible JDs
 ```
 
-Where:
-- **"Open"** means the listing was present in the most recent scan of the company's public job-board feed.
-- **"Finance JDs"** are job postings matching the same fixed taxonomy of accounting and finance roles used by [The CFO Gap](https://jschulman.github.io/cfo-gap): Controller, Assistant Controller, Corporate Controller, VP Finance, Head of Finance, CFO, Accounting Manager, Senior Accounting Manager, Accounting Lead, Senior Accountant, Tax Manager, Tax Director, FP&A Manager, FP&A Director, Technical Accounting Manager, Revenue Accountant, Staff Accountant, AP/AR Specialist, Treasury Manager, Internal Audit Manager, SOX/Compliance Manager.
-- **"Tracked credential"** is one of the regulatory readiness markers listed below. Each JD body is scanned once per credential; a JD that mentions both "CPA" and "SOX" contributes one mention to each, for a total of two signals.
+Eligible JDs were **last observed within the preceding 90 days** at baseline employers, including jobs that have since closed. A JD naming CPA, SOX and PCAOB counts once in headline prevalence and once in each category. Each category's percentage uses eligible JDs, not total mentions. Company counts show whether demand spans employers or is concentrated in a few.
 
-The headline metric is the **sum across all tracked credentials**, not the count of JDs. A single JD listing CPA + SOX + PCAOB contributes 3 signals.
+The original total-mention series remains as a separate historical chart. That count is the sum of category matches, so the example above contributes three mentions. It is not a count of jobs or a score of regulatory readiness. Old snapshots without unique matching-job counts show explicitly labeled legacy mention counts; the dashboard does not estimate prevalence by dividing total mentions by jobs.
 
-## Tracked credentials
+## General credentials and blockchain requirements
 
-The current tracked list:
+The existing categories are CPA, Big Four experience, SOX, PCAOB, MSB/MTL, FINRA/SEC, GAAP/ASC, GENIUS Act, NYDFS and CMA. These mix credentials, experience and legal/control terms; ordinary CPA, GAAP or SOX requirements are not uniquely blockchain-related. Name matches do not establish whether a qualification is required, preferred, present or effective.
 
-- **cpa** — Certified Public Accountant license (active, in-process, or required)
-- **big4** — Big Four audit firm experience (Deloitte, EY, KPMG, PwC) as a required or preferred qualification
-- **sox** — Sarbanes-Oxley internal-controls experience (SOX 404, SOX-readiness, ICFR)
-- **pcaob** — PCAOB-registered audit experience, or PCAOB inspection familiarity
-- **msb-mtl** — Money Services Business registration, state money transmitter licensing
-- **finra-sec** — FINRA registration (Series 7/24/27/28/63/79), SEC registered investment adviser supervisory experience, broker-dealer compliance
-- **gaap-asc** — Specific US GAAP / FASB ASC technical accounting experience (ASC 350, ASC 606, ASC 842, ASC 820, etc.)
-- **genius-act** — Explicit mention of the GENIUS Act, federal stablecoin legislation, or stablecoin-specific federal regulatory readiness
-- **nydfs** — NYDFS BitLicense, New York Department of Financial Services supervisory experience, or NYDFS Part 200 compliance familiarity
-- **cma** — Certified Management Accountant credential (IMA)
+A **separate** set of requirements records integration, reconciliation, custody and controls language in descriptions that also contain blockchain-related context. It has its own unique-JD prevalence and company breadth, plus per-category counts. A whole-description context match is a screening signal, not proof that a specific control applies to blockchain or that the control has been implemented. It is not combined with generic credentials into a readiness score.
 
-The list is intentionally focused on credentials and keywords that signal *federal-grade* compliance readiness — not generic "compliance" language. The list is reviewed quarterly and changes will be noted in this file with a version bump.
+## Eligible finance roles
 
-## Data source
+Controller and assistant-controller variants; finance leadership and CFO; strategic finance; accounting management and leads; senior, financial, staff, fund and other matched accountants; tax management; FP&A; technical accounting and financial reporting; AP/AR; treasury management; internal audit; and SOX/compliance roles. Titles are matched by ordered, case-insensitive patterns. Bookkeeper and payroll-manager capture-only roles are excluded. This includes individual contributors, so “senior finance” does not precisely describe the entire sample.
 
-The scanner queries public job-board APIs:
-- **Ashby:** `https://api.ashbyhq.com/posting-api/job-board/{slug}`
-- **Greenhouse:** `https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true`
-- **Lever:** `https://api.lever.co/v0/postings/{slug}?mode=json`
+## Sources and coverage
 
-For each company in the curated target list, the scanner pulls all open postings, classifies titles into the finance taxonomy, then keyword-matches the full JD body against the credential list. Matches are case-insensitive and use credential-specific patterns (e.g., `\bCPA\b` to avoid matching "incapable", whole-phrase match for "GENIUS Act", boundary-aware match for "Series 7" / "Series 24").
+The private producer polls public Ashby, Greenhouse and Lever job-board feeds and publishes aggregates here. The crypto-native baseline is a selected, evolving employer sample; it is not a census or a representative survey. Company additions, exclusions, title classification, job-board coverage and collection failures can change the sample. Companies without observed eligible jobs are not represented in a JD denominator.
 
-All data is **public**. No portal logins. No robots.txt bypass. Per-domain rate limiting. User-Agent identifies the project.
+The baseline is retained separately from any expanded panel of incumbent financial businesses. An incumbent employer must not be added to this series simply to widen market observation. Employer type, infrastructure-provider role and use case are separate attributes in the expanded research panel. A crypto-native firm can also provide financial infrastructure.
 
-## Target universe
+Daily refresh is the intended cadence. The date shown in the dashboard is the observation date, which can precede publication. A scheduled workflow or recent export is not proof that every employer feed was refreshed successfully. Snapshots live in `data/` and `docs/data/`; the dashboard reads `docs/data/latest.json`.
 
-The curated target list is the same crypto-native middle-market universe used by The CFO Gap:
-- Primary business is crypto-native (not "crypto-curious" fintech)
-- Last priced round: Series B, C, or D (or equivalent token raise scale)
-- Headcount: roughly 50–500
-- Last funding event within 36 months
-- US or US-adjacent operations
+## Interpretation
 
-Hard exclusions: too small (seed / pre-seed / Series A under $10M raised), too big (Coinbase, Binance, Kraken, Block, Robinhood Crypto, Tether, Circle, public crypto companies), dead or distressed.
+Demand can rise because employers request more credentials, the sample grows, or its employer and role mix changes. Normalized prevalence and company breadth improve interpretation but do not eliminate selection bias. Job descriptions cannot establish staffing coverage, regulatory readiness, audit quality or future assurance fees. Multiple credentials in a JD do not make it a stronger measured readiness outcome.
 
-The target list is maintained privately and refreshed quarterly.
+## Material historical changes
 
-## Update cadence
+On **2026-06-24**, the producer switched demand measurement to a 90-day active window and broadened finance title matching. Version 2.0 adds unique-JD prevalence, company breadth and separately scoped blockchain requirements. Older mention totals are retained. Unknown historical unique-job counts and denominators remain null; current listings cannot recreate past prevalence. Compare periods only with compatible definitions and known coverage.
 
-The dashboard refreshes daily. Each snapshot includes:
-- A timestamp
-- Total readiness signal count (sum across all credentials)
-- Per-credential mention count
-- Total tracked JD count (`n_jds`, for context)
-- A point in the daily time series
+## Missing data and historical comparability
 
-Snapshots are versioned under `data/snapshots/YYYY-MM-DD.json`. The dashboard reads `data/latest.json`.
+An unknown numerator or a zero/unknown denominator produces an unknown percentage, displayed as `—`; it is never interpreted as 0%. Missing calendar dates and unavailable values remain gaps in charts. A measured zero requires a known, positive denominator. Material definition changes can break comparability even where a chart is continuous.
 
-## Caveats and limits
-
-- **Mentions ≠ readiness.** A JD asking for a CPA tells us the company wants one — not that they've hired one. The metric is a *demand* signal, not a coverage signal.
-- **Double-counting is by design.** A JD mentioning CPA + SOX + PCAOB is a stronger readiness signal than a JD mentioning only CPA. The headline sum captures that.
-- **Negation is not handled.** A JD that says "no SOX experience required" still mentions SOX. The signal works in aggregate, not per individual JD.
-- **The tracked credential list is curated.** Adding or removing a credential will shift the headline. Changes are documented in this file.
-- **The target list is curated.** We are intentionally focused on crypto-native middle-market companies. Larger crypto companies (Series E+) already have these credentials and would distort the signal.
-- **First-pass classifier.** Finance role titles are matched against the same regex taxonomy as The CFO Gap. Real-world title variation is captured but not perfectly.
-
-## What this cannot tell you
-
-- Whether a company has actually hired a CPA (only that they're asking for one)
-- The quality of the credential (a brand-new CPA and a 20-year Big 4 partner both register as one mention)
-- Whether the sector will pass an actual federal audit
-- Anything about non-US regulatory readiness (MiCA, MAS, FCA — out of scope)
-
-## Versioning
-
-Methodology versions are tracked in this file. Material changes (a credential added, a regex tightened) will bump the `version` field in `data/latest.json` and be noted here.
-
-Current version: **1.0** (2026-05-19).
+The 2026-09-25 interpretation update removes unsupported success/failure verdicts. Version 2.0 producer snapshots identify the updated methodology in metadata; older snapshots retain their original version. Original aggregate series and URLs remain available. Generated snapshots are published by the producer, not fabricated by the dashboard.
 
 ## Reproducibility
 
-You can replicate Compliance Canary if you:
-1. Curate your own list of crypto-native middle-market companies and their ATS slugs.
-2. Poll their public job-board APIs daily.
-3. Apply the finance role taxonomy.
-4. Keyword-match each JD body against the tracked credential list, one increment per credential.
-5. Sum the per-credential counts for the headline.
-
-The target list and scanner code are maintained privately (the source repository contains operational exclusions and rubric weights that are not appropriate for public release). The methodology above is the canonical specification.
+Replicate the selected employer feeds, eligibility rules, title and text patterns, and snapshot date. Keep dated counts and denominators together. Save unique-job and company counts at collection time; do not derive old coverage from today’s database. The private producer owns collection and aggregation; this repository renders the published aggregates.
