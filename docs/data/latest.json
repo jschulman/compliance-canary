@@ -1,692 +1,1546 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-09-25",
-    "version": "1.0",
+    "last_updated": "2026-09-26",
+    "as_of_date": "2026-09-26",
+    "export_generated_at": "2026-09-26T08:30:01.920Z",
+    "version": "2.0",
+    "methodology_version": "finance-demand-v2",
     "next_update": "daily at 03:00 America/Chicago"
+  },
+  "sample": {
+    "n_jds": 177,
+    "n_companies": 51,
+    "window_days": 90,
+    "cohort": "crypto-baseline-v1"
   },
   "headline": {
     "value": 241,
-    "label": "regulatory-readiness signal mentions across crypto-native finance JDs (active in the last 90 days)",
-    "n_jds": 180
+    "label": "Credential and control mentions in crypto-native finance JDs active in the last 90 days (categories overlap)",
+    "n_jds": 177
+  },
+  "prevalence": {
+    "value": 0.6045,
+    "n_matching_jds": 107,
+    "n_jds": 177,
+    "n_companies": 51,
+    "matching_companies": 39
+  },
+  "blockchain_requirements": {
+    "value": 0.209,
+    "n_matching_jds": 37,
+    "n_jds": 177,
+    "n_companies": 51,
+    "matching_companies": 18
   },
   "by_credential": [
     {
       "credential": "cpa",
-      "n": 85
+      "n": 85,
+      "pct": 0.4802,
+      "n_companies": 35
     },
     {
       "credential": "gaap-asc",
-      "n": 56
+      "n": 56,
+      "pct": 0.3164,
+      "n_companies": 28
     },
     {
       "credential": "sox",
-      "n": 36
+      "n": 36,
+      "pct": 0.2034,
+      "n_companies": 17
     },
     {
       "credential": "big4",
-      "n": 34
+      "n": 34,
+      "pct": 0.1921,
+      "n_companies": 17
     },
     {
       "credential": "finra-sec",
-      "n": 22
+      "n": 22,
+      "pct": 0.1243,
+      "n_companies": 8
     },
     {
       "credential": "pcaob",
-      "n": 5
+      "n": 5,
+      "pct": 0.0282,
+      "n_companies": 3
     },
     {
       "credential": "nydfs",
-      "n": 3
-    },
-    {
-      "credential": "msb-mtl",
-      "n": 0
-    },
-    {
-      "credential": "genius-act",
-      "n": 0
+      "n": 3,
+      "pct": 0.0169,
+      "n_companies": 3
     },
     {
       "credential": "cma",
-      "n": 0
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
+    },
+    {
+      "credential": "msb-mtl",
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
+    },
+    {
+      "credential": "genius-act",
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
+    }
+  ],
+  "by_blockchain_requirement": [
+    {
+      "requirement": "custody",
+      "n": 21,
+      "pct": 0.1186,
+      "n_companies": 10
+    },
+    {
+      "requirement": "controls",
+      "n": 15,
+      "pct": 0.0847,
+      "n_companies": 8
+    },
+    {
+      "requirement": "reconciliation",
+      "n": 15,
+      "pct": 0.0847,
+      "n_companies": 11
+    },
+    {
+      "requirement": "integration",
+      "n": 7,
+      "pct": 0.0395,
+      "n_companies": 6
+    },
+    {
+      "requirement": "reserve-attestation",
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
+    },
+    {
+      "requirement": "smart-contract-risk",
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
     }
   ],
   "timeseries": [
     {
       "date": "2026-05-19",
       "total_signals": 33,
-      "n_jds": 0
+      "n_jds": null,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "unavailable"
     },
     {
       "date": "2026-05-20",
       "total_signals": 34,
-      "n_jds": 0
+      "n_jds": 12,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-21",
       "total_signals": 38,
-      "n_jds": 0
+      "n_jds": 13,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-22",
       "total_signals": 36,
-      "n_jds": 0
+      "n_jds": 12,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-23",
       "total_signals": 38,
-      "n_jds": 0
+      "n_jds": 12,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-24",
       "total_signals": 38,
-      "n_jds": 0
+      "n_jds": 12,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-25",
       "total_signals": 38,
-      "n_jds": 0
+      "n_jds": 12,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-26",
       "total_signals": 38,
-      "n_jds": 0
+      "n_jds": 13,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-27",
       "total_signals": 39,
-      "n_jds": 0
+      "n_jds": 12,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-28",
       "total_signals": 43,
-      "n_jds": 0
+      "n_jds": 14,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-29",
       "total_signals": 44,
-      "n_jds": 0
+      "n_jds": 14,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-30",
       "total_signals": 44,
-      "n_jds": 0
+      "n_jds": 14,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-05-31",
       "total_signals": 44,
-      "n_jds": 0
+      "n_jds": 14,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-01",
       "total_signals": 44,
-      "n_jds": 0
+      "n_jds": 14,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-02",
       "total_signals": 44,
-      "n_jds": 0
+      "n_jds": 14,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-03",
       "total_signals": 42,
-      "n_jds": 0
+      "n_jds": 14,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-04",
       "total_signals": 42,
-      "n_jds": 0
+      "n_jds": 14,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-05",
       "total_signals": 52,
-      "n_jds": 0
+      "n_jds": 15,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-06",
       "total_signals": 51,
-      "n_jds": 0
+      "n_jds": 15,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-07",
       "total_signals": 51,
-      "n_jds": 0
+      "n_jds": 15,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-08",
       "total_signals": 51,
-      "n_jds": 0
+      "n_jds": 15,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-09",
       "total_signals": 48,
-      "n_jds": 0
+      "n_jds": 15,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-10",
       "total_signals": 237,
-      "n_jds": 0
+      "n_jds": 40,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-11",
       "total_signals": 243,
-      "n_jds": 0
+      "n_jds": 41,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-12",
       "total_signals": 245,
-      "n_jds": 0
+      "n_jds": 41,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-13",
       "total_signals": 243,
-      "n_jds": 0
+      "n_jds": 41,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-14",
       "total_signals": 401,
-      "n_jds": 0
+      "n_jds": 46,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-15",
       "total_signals": 401,
-      "n_jds": 0
+      "n_jds": 46,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-16",
       "total_signals": 372,
-      "n_jds": 0
+      "n_jds": 46,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-17",
       "total_signals": 359,
-      "n_jds": 0
+      "n_jds": 46,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-18",
       "total_signals": 360,
-      "n_jds": 0
+      "n_jds": 49,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-19",
       "total_signals": 369,
-      "n_jds": 0
+      "n_jds": 48,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-20",
       "total_signals": 368,
-      "n_jds": 0
+      "n_jds": 48,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-21",
       "total_signals": 378,
-      "n_jds": 0
+      "n_jds": 52,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-22",
       "total_signals": 378,
-      "n_jds": 0
+      "n_jds": 51,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-23",
       "total_signals": 388,
-      "n_jds": 0
+      "n_jds": 52,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-24",
       "total_signals": 123,
-      "n_jds": 0
+      "n_jds": 89,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-25",
       "total_signals": 124,
-      "n_jds": 0
+      "n_jds": 91,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-26",
       "total_signals": 128,
-      "n_jds": 0
+      "n_jds": 92,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-27",
       "total_signals": 128,
-      "n_jds": 0
+      "n_jds": 92,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-28",
       "total_signals": 130,
-      "n_jds": 0
+      "n_jds": 97,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-29",
       "total_signals": 130,
-      "n_jds": 0
+      "n_jds": 97,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-06-30",
       "total_signals": 130,
-      "n_jds": 0
+      "n_jds": 97,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-01",
       "total_signals": 131,
-      "n_jds": 0
+      "n_jds": 98,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-02",
       "total_signals": 132,
-      "n_jds": 0
+      "n_jds": 100,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-03",
       "total_signals": 132,
-      "n_jds": 0
+      "n_jds": 100,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-04",
       "total_signals": 132,
-      "n_jds": 0
+      "n_jds": 100,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-05",
       "total_signals": 136,
-      "n_jds": 0
+      "n_jds": 103,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-06",
       "total_signals": 136,
-      "n_jds": 0
+      "n_jds": 103,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-07",
       "total_signals": 139,
-      "n_jds": 0
+      "n_jds": 104,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-08",
       "total_signals": 139,
-      "n_jds": 0
+      "n_jds": 104,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-09",
       "total_signals": 141,
-      "n_jds": 0
+      "n_jds": 104,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-10",
       "total_signals": 144,
-      "n_jds": 0
+      "n_jds": 104,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-11",
       "total_signals": 144,
-      "n_jds": 0
+      "n_jds": 104,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-15",
       "total_signals": 148,
-      "n_jds": 0
+      "n_jds": 107,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-16",
       "total_signals": 148,
-      "n_jds": 0
+      "n_jds": 108,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-17",
       "total_signals": 148,
-      "n_jds": 0
+      "n_jds": 109,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-18",
       "total_signals": 150,
-      "n_jds": 0
+      "n_jds": 110,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-19",
       "total_signals": 152,
-      "n_jds": 0
+      "n_jds": 113,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-20",
       "total_signals": 152,
-      "n_jds": 0
+      "n_jds": 113,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-21",
       "total_signals": 152,
-      "n_jds": 0
+      "n_jds": 114,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-22",
       "total_signals": 155,
-      "n_jds": 0
+      "n_jds": 115,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-23",
       "total_signals": 155,
-      "n_jds": 0
+      "n_jds": 116,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-24",
       "total_signals": 155,
-      "n_jds": 0
+      "n_jds": 117,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-25",
       "total_signals": 157,
-      "n_jds": 0
+      "n_jds": 118,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-26",
       "total_signals": 160,
-      "n_jds": 0
+      "n_jds": 119,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-27",
       "total_signals": 160,
-      "n_jds": 0
+      "n_jds": 119,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-28",
       "total_signals": 162,
-      "n_jds": 0
+      "n_jds": 120,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-29",
       "total_signals": 165,
-      "n_jds": 0
+      "n_jds": 122,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-30",
       "total_signals": 167,
-      "n_jds": 0
+      "n_jds": 123,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-07-31",
       "total_signals": 171,
-      "n_jds": 0
+      "n_jds": 126,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-01",
       "total_signals": 171,
-      "n_jds": 0
+      "n_jds": 126,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-02",
       "total_signals": 171,
-      "n_jds": 0
+      "n_jds": 126,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-03",
       "total_signals": 171,
-      "n_jds": 0
+      "n_jds": 126,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-04",
       "total_signals": 175,
-      "n_jds": 0
+      "n_jds": 128,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-05",
       "total_signals": 175,
-      "n_jds": 0
+      "n_jds": 129,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-06",
       "total_signals": 176,
-      "n_jds": 0
+      "n_jds": 132,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-07",
       "total_signals": 176,
-      "n_jds": 0
+      "n_jds": 134,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-08",
       "total_signals": 176,
-      "n_jds": 0
+      "n_jds": 134,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-09",
       "total_signals": 180,
-      "n_jds": 0
+      "n_jds": 136,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-10",
       "total_signals": 180,
-      "n_jds": 0
+      "n_jds": 136,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-11",
       "total_signals": 182,
-      "n_jds": 0
+      "n_jds": 138,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-12",
       "total_signals": 182,
-      "n_jds": 0
+      "n_jds": 138,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-13",
       "total_signals": 198,
-      "n_jds": 0
+      "n_jds": 146,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-14",
       "total_signals": 198,
-      "n_jds": 0
+      "n_jds": 147,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-15",
       "total_signals": 198,
-      "n_jds": 0
+      "n_jds": 147,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-16",
       "total_signals": 198,
-      "n_jds": 0
+      "n_jds": 147,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-17",
       "total_signals": 198,
-      "n_jds": 0
+      "n_jds": 147,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-18",
       "total_signals": 204,
-      "n_jds": 0
+      "n_jds": 152,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-19",
       "total_signals": 202,
-      "n_jds": 0
+      "n_jds": 151,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-20",
       "total_signals": 202,
-      "n_jds": 0
+      "n_jds": 152,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-21",
       "total_signals": 202,
-      "n_jds": 0
+      "n_jds": 154,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-22",
       "total_signals": 201,
-      "n_jds": 0
+      "n_jds": 155,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-23",
       "total_signals": 202,
-      "n_jds": 0
+      "n_jds": 156,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-24",
       "total_signals": 202,
-      "n_jds": 0
+      "n_jds": 155,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-25",
       "total_signals": 202,
-      "n_jds": 0
+      "n_jds": 157,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-26",
       "total_signals": 205,
-      "n_jds": 0
+      "n_jds": 160,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-27",
       "total_signals": 205,
-      "n_jds": 0
+      "n_jds": 161,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-28",
       "total_signals": 205,
-      "n_jds": 0
+      "n_jds": 161,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-29",
       "total_signals": 205,
-      "n_jds": 0
+      "n_jds": 161,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-30",
       "total_signals": 211,
-      "n_jds": 0
+      "n_jds": 163,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-08-31",
       "total_signals": 211,
-      "n_jds": 0
+      "n_jds": 163,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-01",
       "total_signals": 211,
-      "n_jds": 0
+      "n_jds": 164,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-02",
       "total_signals": 212,
-      "n_jds": 0
+      "n_jds": 165,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-03",
       "total_signals": 212,
-      "n_jds": 0
+      "n_jds": 165,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-04",
       "total_signals": 216,
-      "n_jds": 0
+      "n_jds": 167,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-05",
       "total_signals": 216,
-      "n_jds": 0
+      "n_jds": 168,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-06",
       "total_signals": 216,
-      "n_jds": 0
+      "n_jds": 168,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-07",
       "total_signals": 219,
-      "n_jds": 0
+      "n_jds": 169,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-08",
       "total_signals": 219,
-      "n_jds": 0
+      "n_jds": 169,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-09",
       "total_signals": 222,
-      "n_jds": 0
+      "n_jds": 173,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-10",
       "total_signals": 223,
-      "n_jds": 0
+      "n_jds": 175,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-11",
       "total_signals": 225,
-      "n_jds": 0
+      "n_jds": 175,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-12",
       "total_signals": 225,
-      "n_jds": 0
+      "n_jds": 175,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-13",
       "total_signals": 222,
-      "n_jds": 0
+      "n_jds": 176,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-14",
       "total_signals": 218,
-      "n_jds": 0
+      "n_jds": 174,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-15",
       "total_signals": 224,
-      "n_jds": 0
+      "n_jds": 176,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-16",
       "total_signals": 239,
-      "n_jds": 0
+      "n_jds": 179,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-17",
       "total_signals": 239,
-      "n_jds": 0
+      "n_jds": 180,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-18",
       "total_signals": 239,
-      "n_jds": 0
+      "n_jds": 180,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-19",
       "total_signals": 239,
-      "n_jds": 0
+      "n_jds": 179,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-20",
       "total_signals": 242,
-      "n_jds": 0
+      "n_jds": 181,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-21",
       "total_signals": 242,
-      "n_jds": 0
+      "n_jds": 181,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-22",
       "total_signals": 246,
-      "n_jds": 0
+      "n_jds": 181,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-23",
       "total_signals": 243,
-      "n_jds": 0
+      "n_jds": 180,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-24",
       "total_signals": 243,
-      "n_jds": 0
+      "n_jds": 180,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
     },
     {
       "date": "2026-09-25",
       "total_signals": 241,
-      "n_jds": 180
+      "n_jds": 180,
+      "unique_matching_jds": null,
+      "pct": null,
+      "matching_companies": null,
+      "blockchain_matching_jds": null,
+      "blockchain_pct": null,
+      "status": "saved-snapshot"
+    },
+    {
+      "date": "2026-09-26",
+      "total_signals": 241,
+      "n_jds": 177,
+      "unique_matching_jds": 107,
+      "pct": 0.6045,
+      "matching_companies": 39,
+      "blockchain_matching_jds": 37,
+      "blockchain_pct": 0.209,
+      "status": "measured"
     }
   ]
 }
