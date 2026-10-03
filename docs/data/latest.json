@@ -1,79 +1,79 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-10-02",
-    "as_of_date": "2026-10-02",
-    "export_generated_at": "2026-10-02T08:30:02.568Z",
+    "last_updated": "2026-10-03",
+    "as_of_date": "2026-10-03",
+    "export_generated_at": "2026-10-03T08:30:02.181Z",
     "version": "2.0",
     "methodology_version": "finance-demand-v2",
     "next_update": "daily at 03:00 America/Chicago"
   },
   "sample": {
-    "n_jds": 186,
-    "n_companies": 51,
+    "n_jds": 191,
+    "n_companies": 53,
     "window_days": 90,
     "cohort": "crypto-baseline-v1"
   },
   "headline": {
-    "value": 246,
+    "value": 255,
     "label": "Credential and control mentions in crypto-native finance JDs active in the last 90 days (categories overlap)",
-    "n_jds": 186
+    "n_jds": 191
   },
   "prevalence": {
-    "value": 0.5968,
-    "n_matching_jds": 111,
-    "n_jds": 186,
-    "n_companies": 51,
-    "matching_companies": 39
+    "value": 0.6021,
+    "n_matching_jds": 115,
+    "n_jds": 191,
+    "n_companies": 53,
+    "matching_companies": 41
   },
   "blockchain_requirements": {
-    "value": 0.2043,
-    "n_matching_jds": 38,
-    "n_jds": 186,
-    "n_companies": 51,
-    "matching_companies": 18
+    "value": 0.2042,
+    "n_matching_jds": 39,
+    "n_jds": 191,
+    "n_companies": 53,
+    "matching_companies": 19
   },
   "by_credential": [
     {
       "credential": "cpa",
-      "n": 89,
-      "pct": 0.4785,
-      "n_companies": 35
+      "n": 92,
+      "pct": 0.4817,
+      "n_companies": 37
     },
     {
       "credential": "gaap-asc",
-      "n": 56,
-      "pct": 0.3011,
-      "n_companies": 28
+      "n": 58,
+      "pct": 0.3037,
+      "n_companies": 29
     },
     {
       "credential": "sox",
-      "n": 37,
-      "pct": 0.1989,
-      "n_companies": 17
+      "n": 39,
+      "pct": 0.2042,
+      "n_companies": 19
     },
     {
       "credential": "big4",
-      "n": 34,
-      "pct": 0.1828,
-      "n_companies": 17
+      "n": 36,
+      "pct": 0.1885,
+      "n_companies": 19
     },
     {
       "credential": "finra-sec",
       "n": 22,
-      "pct": 0.1183,
+      "pct": 0.1152,
       "n_companies": 8
     },
     {
       "credential": "pcaob",
       "n": 5,
-      "pct": 0.0269,
+      "pct": 0.0262,
       "n_companies": 3
     },
     {
       "credential": "nydfs",
       "n": 3,
-      "pct": 0.0161,
+      "pct": 0.0157,
       "n_companies": 3
     },
     {
@@ -99,25 +99,25 @@
     {
       "requirement": "custody",
       "n": 22,
-      "pct": 0.1183,
+      "pct": 0.1152,
       "n_companies": 10
     },
     {
       "requirement": "controls",
       "n": 16,
-      "pct": 0.086,
+      "pct": 0.0838,
       "n_companies": 8
     },
     {
       "requirement": "reconciliation",
-      "n": 15,
-      "pct": 0.0806,
-      "n_companies": 11
+      "n": 16,
+      "pct": 0.0838,
+      "n_companies": 12
     },
     {
       "requirement": "integration",
       "n": 7,
-      "pct": 0.0376,
+      "pct": 0.0366,
       "n_companies": 6
     },
     {
@@ -1606,6 +1606,17 @@
       "matching_companies": 39,
       "blockchain_matching_jds": 38,
       "blockchain_pct": 0.2043,
+      "status": "measured"
+    },
+    {
+      "date": "2026-10-03",
+      "total_signals": 255,
+      "n_jds": 191,
+      "unique_matching_jds": 115,
+      "pct": 0.6021,
+      "matching_companies": 41,
+      "blockchain_matching_jds": 39,
+      "blockchain_pct": 0.2042,
       "status": "measured"
     }
   ]
