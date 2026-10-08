@@ -1,9 +1,9 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-10-07",
-    "as_of_date": "2026-10-07",
-    "export_generated_at": "2026-10-07T08:30:05.895Z",
+    "last_updated": "2026-10-08",
+    "as_of_date": "2026-10-08",
+    "export_generated_at": "2026-10-08T08:30:02.408Z",
     "version": "2.0",
     "methodology_version": "finance-demand-v2",
     "next_update": "daily at 03:00 America/Chicago"
@@ -1654,6 +1654,17 @@
     },
     {
       "date": "2026-10-07",
+      "total_signals": 252,
+      "n_jds": 192,
+      "unique_matching_jds": 116,
+      "pct": 0.6042,
+      "matching_companies": 42,
+      "blockchain_matching_jds": 36,
+      "blockchain_pct": 0.1875,
+      "status": "measured"
+    },
+    {
+      "date": "2026-10-08",
       "total_signals": 252,
       "n_jds": 192,
       "unique_matching_jds": 116,
