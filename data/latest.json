@@ -1,9 +1,9 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-11-06",
-    "as_of_date": "2026-11-06",
-    "export_generated_at": "2026-11-06T09:30:05.647Z",
+    "last_updated": "2026-11-07",
+    "as_of_date": "2026-11-07",
+    "export_generated_at": "2026-11-07T09:30:01.879Z",
     "version": "2.0",
     "methodology_version": "finance-demand-v2",
     "next_update": "daily at 03:00 America/Chicago"
@@ -15,7 +15,7 @@
     "cohort": "crypto-baseline-v1"
   },
   "headline": {
-    "value": 276,
+    "value": 274,
     "label": "Credential and control mentions in crypto-native finance JDs active in the last 90 days (categories overlap)",
     "n_jds": 211
   },
@@ -27,11 +27,11 @@
     "matching_companies": 43
   },
   "blockchain_requirements": {
-    "value": 0.1848,
-    "n_matching_jds": 39,
+    "value": 0.1896,
+    "n_matching_jds": 40,
     "n_jds": 211,
     "n_companies": 57,
-    "matching_companies": 22
+    "matching_companies": 23
   },
   "by_credential": [
     {
@@ -48,14 +48,14 @@
     },
     {
       "credential": "sox",
-      "n": 38,
-      "pct": 0.1801,
-      "n_companies": 18
+      "n": 37,
+      "pct": 0.1754,
+      "n_companies": 17
     },
     {
       "credential": "big4",
-      "n": 38,
-      "pct": 0.1801,
+      "n": 37,
+      "pct": 0.1754,
       "n_companies": 20
     },
     {
@@ -98,9 +98,9 @@
   "by_blockchain_requirement": [
     {
       "requirement": "custody",
-      "n": 23,
-      "pct": 0.109,
-      "n_companies": 13
+      "n": 24,
+      "pct": 0.1137,
+      "n_companies": 14
     },
     {
       "requirement": "controls",
@@ -110,9 +110,9 @@
     },
     {
       "requirement": "reconciliation",
-      "n": 15,
-      "pct": 0.0711,
-      "n_companies": 14
+      "n": 16,
+      "pct": 0.0758,
+      "n_companies": 15
     },
     {
       "requirement": "integration",
@@ -1991,6 +1991,17 @@
       "matching_companies": 43,
       "blockchain_matching_jds": 39,
       "blockchain_pct": 0.1848,
+      "status": "measured"
+    },
+    {
+      "date": "2026-11-07",
+      "total_signals": 274,
+      "n_jds": 211,
+      "unique_matching_jds": 132,
+      "pct": 0.6256,
+      "matching_companies": 43,
+      "blockchain_matching_jds": 40,
+      "blockchain_pct": 0.1896,
       "status": "measured"
     }
   ]
