@@ -1,9 +1,9 @@
 {
   "metadata": {
     "source": "Compliance Canary",
-    "last_updated": "2026-11-10",
-    "as_of_date": "2026-11-10",
-    "export_generated_at": "2026-11-10T09:30:02.841Z",
+    "last_updated": "2026-11-11",
+    "as_of_date": "2026-11-11",
+    "export_generated_at": "2026-11-11T09:30:02.078Z",
     "version": "2.0",
     "methodology_version": "finance-demand-v2",
     "next_update": "daily at 03:00 America/Chicago"
@@ -15,13 +15,13 @@
     "cohort": "crypto-baseline-v1"
   },
   "headline": {
-    "value": 270,
+    "value": 263,
     "label": "Credential and control mentions in crypto-native finance JDs active in the last 90 days (categories overlap)",
     "n_jds": 208
   },
   "prevalence": {
-    "value": 0.6298,
-    "n_matching_jds": 131,
+    "value": 0.625,
+    "n_matching_jds": 130,
     "n_jds": 208,
     "n_companies": 58,
     "matching_companies": 42
@@ -36,21 +36,15 @@
   "by_credential": [
     {
       "credential": "cpa",
-      "n": 106,
-      "pct": 0.5096,
+      "n": 105,
+      "pct": 0.5048,
       "n_companies": 36
     },
     {
       "credential": "gaap-asc",
-      "n": 62,
-      "pct": 0.2981,
+      "n": 60,
+      "pct": 0.2885,
       "n_companies": 30
-    },
-    {
-      "credential": "sox",
-      "n": 36,
-      "pct": 0.1731,
-      "n_companies": 17
     },
     {
       "credential": "big4",
@@ -59,9 +53,15 @@
       "n_companies": 20
     },
     {
+      "credential": "sox",
+      "n": 34,
+      "pct": 0.1635,
+      "n_companies": 17
+    },
+    {
       "credential": "finra-sec",
-      "n": 20,
-      "pct": 0.0962,
+      "n": 18,
+      "pct": 0.0865,
       "n_companies": 7
     },
     {
@@ -2032,6 +2032,17 @@
       "n_jds": 208,
       "unique_matching_jds": 131,
       "pct": 0.6298,
+      "matching_companies": 42,
+      "blockchain_matching_jds": 42,
+      "blockchain_pct": 0.2019,
+      "status": "measured"
+    },
+    {
+      "date": "2026-11-11",
+      "total_signals": 263,
+      "n_jds": 208,
+      "unique_matching_jds": 130,
+      "pct": 0.625,
       "matching_companies": 42,
       "blockchain_matching_jds": 42,
       "blockchain_pct": 0.2019,
